@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: books
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_SERVER}/books
+    username: postgres
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+server:
+  port: 8080
+  address: 127.0.0.1
